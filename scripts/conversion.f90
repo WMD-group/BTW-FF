@@ -1,3 +1,10 @@
+!This script converts tinker output .xyz files into general format .xyz
+!files readable by the majority of visualisation and editing software
+!programmes.
+
+!To run just type in the name of the tinker output file without the .xyz
+!extension and out.xyz will be generated.
+
    ! This program is free software: you can redistribute it and/or modify
    ! it under the terms of the GNU General Public License as published by
    ! the Free Software Foundation, either version 3 of the License, or

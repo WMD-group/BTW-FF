@@ -1,3 +1,10 @@
+!This script converts a general format .pdb file into a tinker input
+!.xyz file.
+!This script has been written for our initial publication. Users can
+!edit atom types for their systems if need be. The generated
+!output_tinker.xyz will not print with periodic connectivity - merely
+!the connectivity from the .pdb file.
+
    ! This program is free software: you can redistribute it and/or modify
    ! it under the terms of the GNU General Public License as published by
    ! the Free Software Foundation, either version 3 of the License, or
