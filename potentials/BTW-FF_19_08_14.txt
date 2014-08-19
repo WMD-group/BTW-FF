@@ -1,0 +1,177 @@
+#parameters     PATH to a library of mm3 potentials
+#ALL CALCULATIONS USING THESE PARAMETERS HAVE BEEN RUN WITH THE TINKER PROGRAMME
+##See Tinker manual for more information 'http://dasher.wustl.edu/tinker/'
+##Library of mm3 potentials is open source
+
+##REFERENCES
+##MM3 'Allinger, Norman L., Young H. Yuh, and Jenn Huei Lii., Journal of the American Chemical Society 111.23 (1989): 8551-8566.'
+##MOF-FF 'Bureekaew, Sareeya, et al., physica status solidi (b) 250.6 (2013): 1128-1141.'
+##TINKER 'Ren, Pengyu, and Jay W. Ponder. The Journal of Physical Chemistry B 107.24 (2003): 5933-5947.'
+
+#PLEASE NOTE THAT COMMENTED PARAMETERS REQUIRE SELECTION DEPENDING ON THE STRUCTURE
+
+
+   #You should have received a copy of the GNU General Public License
+   #along with this program.  If not, see <http://www.gnu.org/licenses/>.
+   #Written by Jessica K. Bristow and Davide Tiana, University of Bath
+   #Made open access on Tuesday 10th June 2014
+
+atom       170      O     "O-Carboxylate"        8    15.9994    2
+atom       185      Cu    "Cu"                  29    63.546     5
+atom       902      C     "Calpha"               6    12.0       3
+atom       913      C     "Cacid"                6    12.0       3
+atom       912      C     "Cbenzene"             6    12.0       3
+atom       915      H     "Hbenzene"             1     1.008     1
+atom        75      O     "O-H"                  8     15.9994   4
+atom       192      Zr    "Zr"                  40     91.2240   8
+atom        21      H     "H-O"                  1      1.0080   1
+
+vdw           170               1.8200     0.0590
+vdw           171               1.820      0.0590
+vdw           172               2.290      0.2760
+vdw           902               1.9600     0.0560
+vdw           912               1.9600     0.0560
+vdw           913               1.9400     0.0560
+vdw           915               1.6200     0.0200      0.923
+vdw           185               2.290      0.276
+vdw            75               1.82       0.0590
+vdw            21               1.6200     0.0200      0.923
+
+#general
+bond        912     915           5.150    1.101
+bond        913     170           5.999    1.299 
+bond        913     902           5.299    1.485 
+bond        912     912           4.5      1.389 
+bond        902     912           4.500    1.389 
+bond        903     903           5.899    1.465
+bond        903     912           5.999    1.389
+bond5       913     170           5.999    1.299
+
+#IRMOF-series
+bond       172     171          4.329      2.039 
+bond       172     170          3.665      2.009 
+
+#HKUST-1
+bond5      170     185          5.091      1.969
+bond5      185     185          4.349      2.422
+
+#UiO series
+bond        21      75          3.630     0.989
+bond       192     171          5.809     2.192
+bond       192     170          5.821     2.338
+bond4       75     192          5.500     2.276
+bond4      171     192          5.809     2.192
+bond        75     192          5.500     2.276
+
+#general
+angle         170  913  170     2.867     126.299 
+angle         902  913  170     1.867     117.082     
+angle         912  902  912     0.000     119.406
+angle         902  912  912     0.060     121.582
+angle         912  902  913     0.360     121.797
+angle         902  912  915     0.090     119.859
+angle         903  903  912     5.00      122.690
+angle         912  903  912     5.00      117.621
+angle         903  912  912     5.00      122.904
+angle         903  912  915     5.00      120.00
+
+#HKUST-1
+angle         170   185   170      0.050    175.945
+angle5        170   913   170      2.867    126.299
+angle5        913   170   185      3.322    120.962
+angle5        170   185   185      4.299     87.822
+
+#IRMOF-series
+angle         171    172    170     3.000   113.584   
+angle         172    170    913     3.022   130.606   
+angle         170    172    170     1.000   110.103   
+angle         172    171    172     1.198   110.992 
+
+#UiO series
+angle         171    192    170    2.099    84.318
+angle         192    170    913    2.099   139.820
+angle         170    192    170    2.099    73.103
+angle         192    171    192    2.099   118.053
+angle         21     75     192    2.099   116.848
+angle        192     75     192    2.099   103.406
+angle4       192    171     192    2.099   118.408
+angle        170     192     75    2.099    89.658
+angle        171     192     75    2.099    71.110
+angle4       192      75     192   2.099   103.406
+angle         75     192      75   2.099   123.230
+angle4        75     192     171   2.099    71.110
+angle        171     192     171   2.099    91.479
+
+#general
+opbend        170  913   170  902            1.5 
+opbend        902  913   170  170            0.000 
+opbend        902  912   912  915            0.000 
+
+#UiO series
+opbend        192  171    192    170         2.0
+
+#general
+torsion       170  913  902   912      0.0  0.0   1  2.5     180.0  2   0.0  0.0  3
+torsion       915  912  902   913      0.0  0.0   1  1.999   180.0  2   0.0  0.0  3
+torsion       913  902  912   912      0.0  0.0   1  8.030   180.0  2   0.0  0.0  3
+torsion       912  902  912   912      0.0  0.0   1  8.030   180.0  2   0.0  0.0  3
+torsion       912  902  912   915      0.0  0.0   1  8.030   180.0  2   0.0  0.0  3
+torsion       902  912  912   915      0.0  0.0   1  8.030   180.0  2   0.0  0.0  3
+torsion       902  912  912   902      0.0  0.0   1  8.030   180.0  2   0.0  0.0  3
+torsion       903  903  912   915      0.0  0.00  1  6.999   180.0  2   0.0  0.0  3
+torsion       903  903  912   912      0.0  0.00  1  6.9     180.0  2   0.0  0.0  3
+torsion       912  903  903   912      0.0  0.00  1  6.9     180.0  2   0.0  0.0  3
+torsion       912  903  912   912      0.0  0.0   1  4.930   180.0  2   0.0  0.0  3
+torsion       912  903  912   915      0.0  0.0   1  4.930   180.0  2   0.0  0.0  3
+torsion       915  912  912   903      0.0  0.0   1  4.930   180.0  2   0.0  0.0  3
+torsion       902  912  912   903      0.0  0.0   1  5.930   180.0  2   0.0  0.0  3
+#torsion      912  903  903   912      0.0  0.0   1  5.000   180.0  2   0.0  0.0  3
+torsion       902  912  912   912      0.0  0.0   1  8.030   180.0  2   0.0  0.0  3
+
+#IRMOF-series
+torsion       171    172    170    913      0.0  0.0 1    4.690   180.0 2    0.0 0.0 3 
+torsion       172    170    913    170      0.0  0.0 1    2.176   180.0 2    0.0 0.0 3 
+torsion       170    172    170    913      0.0  0.0 1    0.860   180.0 2    0.0 0.0 3 
+torsion       172    170    913    902      0.0  0.0 1    0.072   180.0 2    0.0 0.0 3
+torsion       170    172    171    172      0.0  0.0 1    1.000   180.0 2    0.0 0.0 3
+
+#HKUST-1
+torsion       170    185    170      913    0.0  0.0 1  0.860   180.0  2  0.0 0.0 3
+torsion       185    170    913      902    0.0  0.0 1  0.072   180.0  2  0.0 0.0 3
+torsion5      170    913    170      185    0.0  0.0 1  5.805   180.0  2  0.0 0.0 3
+torsion5      913    170    185      185    0.0  0.0 1  0.850   180.0  2  0.0 0.0 3
+torsion       170    185    185      170    0.0  0.0 1  2.071   180.0  2  0.0 0.0 3
+torsion5      170    185    185      170    0.0  0.0 1  2.071   180.0  2  0.0 0.0 3
+
+#UiO-series
+#torsion      912    903    903    912      0.0  0.0 1    1.299   180.0 2   0.0 0.0  3
+torsion       171    192    170    913      0.0  0.0 1    2.064   180.0 2   0.0 0.0 3
+torsion       192    170    913    170      0.0  0.0 1    2.017   180.0 2   0.0 0.0 3
+torsion       915    912    902    913      0.0  0.0 1    1.999   180.0 2   0.0 0.0 3
+torsion       170    192    170    913      0.0  0.0 1    0.860   180.0 2   0.0 0.0 3
+torsion       192    170    913    902      0.0  0.0 1    0.072   180.0 2   0.0 0.0 3
+torsion       170    192     171   192      0.0  0.0 1    1.000  180.0 2    0.0 0.0 3
+torsion       913    170     192     75     0.0 0.0 1     5.000  180.0 2  0.0 0.0 3
+torsion        21     75     192    170     0.0 0.0 1     5.000  180.0 2  0.0 0.0 3
+torsion        21     75     191    170     0.0 0.0 1     5.000  180.0 2  0.0 0.0 3
+torsion       192     75     192    170     0.0 0.0 1     5.000  180.0 2  0.0 0.0 3
+torsion       192     75     192     75     0.0 0.0 1     5.000  180.0 2  0.0 0.0 3
+torsion       192     75     192    171     0.0 0.0 1     5.000  180.0 2  0.0 0.0 3
+torsion        21     75     192     75     0.0 0.0 1     5.000  180.0 2  0.0 0.0 3
+torsion4      192     75     192    171     0.0 0.0 1     5.000  180.0 2  0.0 0.0 3
+torsion       192    171     192     75     0.0 0.0 1     5.000  180.0 2  0.0 0.0 3
+torsion       192    171     192    171     0.0 0.0 1     5.000  180.0 2  0.0 0.0 3
+torsion        21     75     192    171     0.0 0.0 1     5.000  180.0 2  0.0 0.0 3
+torsion4      192     75     192    171     0.0 0.0 1     5.000  180.0 2  0.0 0.0 3
+torsion4      192    171     192     75     0.0 0.0 1     5.000  180.0 2  0.0 0.0 3
+
+charge        171 -1.186             
+charge        172  1.291       
+charge        170 -1.154            
+charge        913  1.539          
+charge        912 -0.050       
+charge        902 -0.008
+charge        915  0.118
+charge        192  2.605      
+charge         75 -1.243
+charge         21  0.622
