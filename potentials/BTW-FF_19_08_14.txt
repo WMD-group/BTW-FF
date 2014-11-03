@@ -26,6 +26,7 @@ atom        75      O     "O-H"                  8     15.9994   4
 atom       192      Zr    "Zr"                  40     91.2240   8
 atom        21      H     "H-O"                  1      1.0080   1
 atom       172      Zn    "Zn”                  30     65.380    4
+atom       171      O     “O-inorganic”        8    15.9994    4
 
 vdw           170               1.8200     0.0590
 vdw           171               1.820      0.0590
