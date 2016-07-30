@@ -1,7 +1,7 @@
 BTW-FF
 ======
 
-A forcefield to describe the structures and properties of metal-organic frameworks 
+A forcefield to describe the structures and properties of metal-organic frameworks reported in 2014. A major extension of this forcefield, developed in 2016, is [VMOF](https://github.com/WMD-group/VMOF).
 
 Publication
 ------------
